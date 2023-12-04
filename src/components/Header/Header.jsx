@@ -12,23 +12,23 @@ export const Header = () => {
     <header className="header">
       <nav className="navbar">
         <a href="#home">
-          <div className="logo">SNACK</div>
+          <div className="logo">Bem Jequi</div>
         </a>
         <div className="menuItems">
           <a href="#home">
             <div className="menuItem">Home</div>
           </a>
           <a href="#about">
-            <div className="menuItem">About</div>
+            <div className="menuItem">Sobre</div>
           </a>
           <a href="#menu">
-            <div className="menuItem">Menu</div>
+            <div className="menuItem">Produto</div>
           </a>
           <a href="#testimonials">
-            <div className="menuItem">Testimonials</div>
+            <div className="menuItem">Avaliações</div>
           </a>
           <a href="#contact">
-            <div className="menuItem">Contact us</div>
+            <div className="menuItem">Contato</div>
           </a>
         </div>
       </nav>
