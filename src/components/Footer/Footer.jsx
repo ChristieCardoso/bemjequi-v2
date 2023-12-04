@@ -1,6 +1,6 @@
 
 import "./Footer.scss";
-import bg from './footer-banner.jpg';
+import bg from '../../assets/footer-banner.jpg';
 
 
 export const Footer = () => {
