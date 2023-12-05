@@ -8,7 +8,7 @@ export const Menu = () => {
   return (
     <section
       id="menu"
-      className="foodMenu bgImg bgImgFixed"
+      className="foodMenu bgImg"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="container">

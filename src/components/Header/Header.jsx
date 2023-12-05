@@ -1,9 +1,7 @@
 import { AiOutlineHome } from 'react-icons/ai';
-
-import { MdRestaurantMenu } from 'react-icons/md';
-import { MdRateReview } from 'react-icons/md';
+import { MdOutlineLibraryBooks, MdHotelClass } from 'react-icons/md';
+import { LiaCheeseSolid } from "react-icons/lia";
 import { GrContact } from 'react-icons/gr';
-
 
 import "./Header.scss";
 
@@ -13,6 +11,7 @@ export const Header = () => {
       <nav className="navbar">
         <a href="#home">
           <div className="logo">Bem Jequi</div>
+
         </a>
         <div className="menuItems">
           <a href="#home">
@@ -39,13 +38,13 @@ export const Header = () => {
             <div className="mobileItem"><AiOutlineHome /></div>
           </a>
           <a href="#about">
-            <div className="mobileItem"></div>
+            <div className="mobileItem"><MdOutlineLibraryBooks /></div>
           </a>
           <a href="#menu">
-            <div className="mobileItem"><MdRestaurantMenu /></div>
+            <div className="mobileItem"><LiaCheeseSolid /></div>
           </a>
           <a href="#testimonials">
-            <div className="mobileItem"><MdRateReview /></div>
+            <div className="mobileItem"><MdHotelClass /></div>
           </a>
           <a href="#contact">
             <div className="mobileItem"><GrContact /></div>
