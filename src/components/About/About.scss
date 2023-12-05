@@ -13,7 +13,7 @@
     .aboutContainerImg {
       width: 350px;
       height: 600px;
-      background: url(../../assets/about-backgroun.png) no-repeat center / cover;
+      background: url(../../assets/about-backgroun.png) no-repeat center / cover;    
     }
 
     .aboutContainerDetails {
@@ -43,5 +43,10 @@
         }
       }
     }
+  }
+}
+@media (max-width: 900px) {
+  .aboutContainerImg {
+    max-height: 250px;
   }
 }
