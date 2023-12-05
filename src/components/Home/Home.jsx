@@ -1,29 +1,28 @@
+import homeImage from '../../assets/home-img.png';
+import bg from "../../assets/ds.png";
+
 import "./Home.scss";
 
 export const Home = () => {
   return (
-    <section id="home" className="home">
-      <video
-        className="homeVideoIntro"
-        autoPlay
-        muted
-        loop
-      >
-        <source src="assets/home-intro.mp4" type="video/mp4" />
-        Your browser is not supported
-      </video>
-      <div className="homeDetails">
-        <div className="container">
-          <div className="row">
-            <div className="slogan">
-              <h1>SNACK</h1>
-              <p>Try the best food of the week.</p>
-              <div>
-                <a href="https://www.foodpanda.com.bd/"><button>Order Now</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section id="home" className="home"
+      style={{ backgroundImage: `url(${bg})` }}
+    >
+      <div className="content">
+        <h3>Food made with love</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex aliquam
+          suscipit nemo, natus assumenda, similique placeat illo distinctio
+          exercitationem ea, mollitia officiis nulla vel iure illum aliquid
+          eaque et accusamus?
+        </p>
+        <a href="#!" className="btn">
+          order now
+        </a>
+      </div>
+
+      <div className="image">
+        <img src={homeImage} alt="home page" />
       </div>
     </section>
   );

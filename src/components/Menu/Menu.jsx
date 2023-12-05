@@ -16,17 +16,7 @@ export const Menu = () => {
           <div className="foodMenuContainer">
             <h1 className="foodMenuContainerHeader">
               What will you <span className="color-grey">Eat</span> today?
-            </h1>
-            <div className="foodMenuContainerList">
-
-            </div>
-            <div className="foodMenu">
-
-
-
-
-            </div>
-
+            </h1>           
           </div>
         </div>
       </div>
