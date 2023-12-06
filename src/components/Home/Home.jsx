@@ -1,5 +1,6 @@
 import homeImage from '../../assets/home-img.png';
 import bg from "../../assets/ds.png";
+import { FiArrowRight } from "react-icons/fi";
 
 import "./Home.scss";
 
@@ -17,14 +18,15 @@ export const Home = () => {
             </p>
             <a href="#!" className="btn">
               Peça Já
+              <FiArrowRight />
             </a>
           </div>
 
           <div className="image">
             <img src={homeImage} alt="home page" />
           </div>
-          </div>
         </div>
+      </div>
     </section>
   );
 };
