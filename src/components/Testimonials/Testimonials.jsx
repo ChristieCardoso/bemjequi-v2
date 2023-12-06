@@ -1,43 +1,39 @@
-
 import "./Testimonials.scss";
+import val from '../../assets/val.jpg'
+import lais from '../../assets/lais.jpg'
+import carlos from '../../assets/calor.jpg'
 
 export const Testimonial = () => {
   return (
     <section id="testimonials" className="testimonials">
       <div className="container">
-        <h1 className="testimonialsHeader">Testimonials</h1>
+        <h1 className="testimonialsHeader">Avaliações</h1>
         <div className="testimonialsAll">
           <div className="testimonialsDetails">
-            <img className="bgImg" src="./assets/user/a.jpg" alt="" />
-            <h1>Rakib</h1>
+            <img className="bgImg" src={val} alt="" />
+            <h1>Valdey Santos</h1>
             <p>
-              The Food we had enjoyed at the time of dinner. It was really
-              delicious taste with great quality, everything had unique taste
-              which we had ordered, nice arrangement and services from the staff
-              while eating.
+              Gostei muito do queijo, produto de qualidade, virei cliente.
             </p>
           </div>
 
           <div className="testimonialsDetails">
-            <img className="bgImg" src="./assets/user/b.jpg" alt="" />
-            <h1>Santo</h1>
+            <img className="bgImg" src={lais} alt="" />
+            <h1>Lais Lima</h1>
             <p>
-              Although we didnt go into the onsite restaurant, we ordered some
-              food a few times and it was delicious. The lobby were nice and
-              open, good place to relax and meet friends.
+              Melhor queijo da região!!! Sabor incrível e preço muito acessível, recomendo muito a compra!!
             </p>
           </div>
 
           <div className="testimonialsDetails">
-            <img className="bgImg" src="./assets/user/c.jpg" alt="" />
-            <h1>Khalid</h1>
+            <img className="bgImg" src={carlos} alt="" />
+            <h1>Carlos Silva</h1>
             <p>
-              The food was fresh, properly prepared and a great value for the
-              price. We highly recommend it. The breakfast buffet on Sunday was
-              equally as good.
+              Eu experimentei o queijo cozido dessa página e simplesmente amei! Ele é muito saboroso e tem uma textura incrível.
             </p>
           </div>
         </div>
+        <a className="bn31" href="https://www.facebook.com/bemjequi/reviews" target="_blank" rel="noreferrer"><span className="bn31span">Deixe sua avaliação</span></a>
       </div>
     </section>
   );
