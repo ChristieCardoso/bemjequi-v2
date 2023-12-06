@@ -2,15 +2,12 @@ import "./About.scss";
 
 export const About = () => {
   return (
-    <section id="about" className="about">
+    <section id="about">
       <div className="container">
         <div className="aboutContainer">
           <section className="aboutContainerImg"></section>
-
           <div className="aboutContainerDetails">
-            <h1>
-              <span className="colorGrey"></span> Bemjequi - A Origem do Sabor Autêntico<span className="colorGrey"> </span>
-            </h1>
+            <h1>Bem Jequi - A Origem do Sabor Autêntico</h1>
             <p>
               No Vale jequitionha nasceu a marca Bemjequi, sinônimo de excelência em queijo artesanal. Há mais de dois anos, nossa família se dedica à tradição queijeira. Nossos queijos são meticulosamente produzidos, utilizando apenas os melhores ingredientes locais e um cuidado especial em cada etapa do processo.
             </p>
@@ -19,9 +16,10 @@ export const About = () => {
             </p>
           </div>
         </div>
-
       </div>
     </section>
   );
 };
+
+
 

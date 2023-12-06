@@ -1,52 +1,55 @@
 @import "../../index.scss";
 
 /* about */
-.about {
-  .aboutContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 5rem;
 
-    .aboutContainerImg {
-      width: 350px;
-      height: 600px;
-      background: url(../../assets/about-backgroun.png) no-repeat center / cover;    
-    }
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5rem;
 
-    .aboutContainerDetails {
-      width: 450px;
-      text-align: center;
-      background-color: var(--white);
-      border-radius: 3rem;
-      box-shadow: 0rem 0.44rem 1.81rem 0rem rgba(100, 100, 111, 0.2);
-
-      & h1 {
-        font-size: 3rem;
-        color: var(--primary-color);
-        margin: 5rem 3rem 2rem 3rem;
-
-        @include respond(phone) {
-          font-size: 2rem;
-        }
-      }
-
-      & p {
-        font-size: 1.7rem;
-        color: var(--grey);
-        margin: 5rem 3rem 2rem 3rem;
-
-        @include respond(phone) {
-          font-size: 1.5rem;
-        }
-      }
+  .aboutContainerImg {
+    width: 350px;
+    height: 600px;
+    background: url(../../assets/about-backgroun.png) no-repeat center / cover;
+    @include respond(phone) {
+      max-height: 250px;
     }
   }
-}
-@media (max-width: 900px) {
-  .aboutContainerImg {
-    max-height: 250px;
+
+  .aboutContainerDetails {
+    width: 450px;
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 3rem;
+    box-shadow: 0rem 0.44rem 1.81rem 0rem rgba(100, 100, 111, 0.2);
+
+    & h1 {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin: 5rem 3rem 2rem 3rem;
+
+      @include respond(phone) {
+        font-size: 3rem;
+      }
+    }
+
+    & p {
+      font-size: 1.7rem;
+      color: var(--grey);
+      margin: 5rem 3rem 2rem 3rem;
+      font-style: italic;
+
+      @include respond(phone) {
+        font-size: 2.3rem;
+        font-style: italic;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+    }
   }
 }
