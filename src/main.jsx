@@ -7,7 +7,7 @@ import { Header } from './components/Header/Header.jsx'
 import { Home } from './components/Home/Home.jsx';
 import { About } from './components/About/About.jsx'
 import { ErrorPage } from './components/Error/Error.jsx';
-import { Menu } from './components/Menu/Menu.jsx';
+import { Product } from './components/Product/Product.jsx';
 import { Testimonial } from './components/Testimonials/Testimonials.jsx';
 import { Contact } from './components/Contact/Contact.jsx';
 import { Footer } from './components/Footer/Footer.jsx';
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
             <Header />
             <Home />
             <About />
-            <Menu />
+            <Product />
             <Testimonial />
             <Contact />
             <Footer />

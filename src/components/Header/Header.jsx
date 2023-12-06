@@ -20,7 +20,7 @@ export const Header = () => {
           <a href="#about">
             <div className="menuItem">Sobre</div>
           </a>
-          <a href="#menu">
+          <a href="#Product">
             <div className="menuItem">Produto</div>
           </a>
           <a href="#testimonials">
@@ -40,7 +40,7 @@ export const Header = () => {
           <a href="#about">
             <div className="mobileItem"><MdOutlineLibraryBooks /></div>
           </a>
-          <a href="#menu">
+          <a href="#Product">
             <div className="mobileItem"><LiaCheeseSolid /></div>
           </a>
           <a href="#testimonials">
