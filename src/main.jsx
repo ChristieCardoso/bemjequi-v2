@@ -9,7 +9,6 @@ import { About } from './components/About/About.jsx'
 import { ErrorPage } from './components/Error/Error.jsx';
 import { Product } from './components/Product/Product.jsx';
 import { Testimonial } from './components/Testimonials/Testimonials.jsx';
-import { Contact } from './components/Contact/Contact.jsx';
 import { Footer } from './components/Footer/Footer.jsx';
 import { Loader } from './components/Loader/Loader.jsx';
 
@@ -41,7 +40,7 @@ const router = createBrowserRouter([
             <About />
             <Product />
             <Testimonial />
-            <Contact />
+
             <Footer />
           </>
         )

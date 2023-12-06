@@ -26,7 +26,7 @@ export const Header = () => {
           <a href="#testimonials">
             <div className="menuItem">Avaliações</div>
           </a>
-          <a href="#contact">
+          <a href="#footer">
             <div className="menuItem">Contato</div>
           </a>
         </div>
@@ -46,7 +46,7 @@ export const Header = () => {
           <a href="#testimonials">
             <div className="mobileItem"><MdHotelClass /></div>
           </a>
-          <a href="#contact">
+          <a href="#footer">
             <div className="mobileItem"><GrContact /></div>
           </a>
         </div>
