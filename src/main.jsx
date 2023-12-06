@@ -11,6 +11,7 @@ import { Menu } from './components/Menu/Menu.jsx';
 import { Testimonial } from './components/Testimonials/Testimonials.jsx';
 import { Contact } from './components/Contact/Contact.jsx';
 import { Footer } from './components/Footer/Footer.jsx';
+import { Loader } from './components/Loader/Loader.jsx';
 
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
               className="Top-of-the-page"
               onClick={topOfThePagehander}
             />
+            <Loader />
             <Header />
             <Home />
             <About />
