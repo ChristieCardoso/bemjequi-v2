@@ -2,6 +2,7 @@
 
 .footer {
   border: 1px solid red;
+  margin-top: 10rem;
   .footerContainer {
     border: 1px solid red;
     padding: 1rem;
@@ -15,6 +16,7 @@
     @include respond(phone) {
       justify-content: center;
       padding: 3rem 1rem;
+      flex-direction: row-reverse;
     }
 
     .footerInfo {
@@ -27,7 +29,6 @@
         font-size: 1.6rem;
         color: rgb(216, 216, 216);
         margin-bottom: 0.5rem;
-        cursor: pointer;
       }
       @include respond(phone) {
         margin-bottom: 2rem;
@@ -39,14 +40,33 @@
     font-size: 1.6rem;
     color: white;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include respond(phone) {
       padding-bottom: 7rem;
     }
+    img {
+      width: 150px;
+    }
+
+    .iconContainer {
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      list-style-type: none;
+      width: 100px;
+    }
   }
 
-  .footerForm{
+  .icon {
+    cursor: pointer;
+  }
+
+  .footerForm {
     display: flex;
   }
   .license {

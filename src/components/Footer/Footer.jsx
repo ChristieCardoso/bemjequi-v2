@@ -1,15 +1,16 @@
-
-import "./Footer.scss";
+import { BsInstagram, BsFacebook, BsWhatsapp } from 'react-icons/bs';
 import bg from '../../assets/footer-banner.jpg';
 import bk from '../../assets/queijo.png';
-
 import Form from "./Form/Form";
-import { BsInstagram, BsFacebook, BsWhatsapp } from 'react-icons/bs';
 
+import "./Footer.scss";
 
 export const Footer = () => {
   const handleWhatsAppClick = () =>
     window.open("https://api.whatsapp.com/send?phone=31995363463", "_blank");
+  const ss = () =>
+    window.open("https://www.facebook.com/bemjequi", "_blank");
+
   return (
     <footer
       id="footer"
@@ -29,15 +30,15 @@ export const Footer = () => {
           <div className="footerSocial">
             <img src={bk} alt="" />
             <div>
-              <ul className="wrapper">
-                <li className="icon whatsapp">
+              <ul className="iconContainer">
+                <li className="icon">
                   <i onClick={handleWhatsAppClick}><BsWhatsapp /></i>
                 </li>
-                <li className="icon whatsapp">
-                  <i onClick={handleWhatsAppClick}><BsInstagram /></i>
+                <li className="icon">
+                  <i><BsInstagram onClick={ss} /></i>
                 </li>
-                <li className="icon whatsapp">
-                  <a><BsFacebook src="https://www.instagram.com/" /></a>
+                <li className="icon">
+                  <a><BsFacebook src="https://www.instagram.com/bemjequi" /></a>
                 </li>
               </ul>
             </div>
