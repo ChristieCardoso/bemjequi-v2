@@ -8,8 +8,6 @@ import "./Footer.scss";
 export const Footer = () => {
   const handleWhatsAppClick = () =>
     window.open("https://api.whatsapp.com/send?phone=31995363463", "_blank");
-  const ss = () =>
-    window.open("https://www.facebook.com/bemjequi", "_blank");
 
   return (
     <footer
@@ -31,14 +29,18 @@ export const Footer = () => {
             <img src={bk} alt="" />
             <div>
               <ul className="iconContainer">
-                <li className="icon">
+                <li className="icon whats">
                   <i onClick={handleWhatsAppClick}><BsWhatsapp /></i>
                 </li>
-                <li className="icon">
-                  <i><BsInstagram onClick={ss} /></i>
+                <li className="icon insta">
+                  <a href="https://www.instagram.com/bemjequi" target="_blank" rel="noopener noreferrer">
+                    <BsInstagram />
+                  </a>
                 </li>
-                <li className="icon">
-                  <a><BsFacebook src="https://www.instagram.com/bemjequi" /></a>
+                <li className="icon facebook">
+                  <a href="https://www.facebook.com/bemjequi" target="_blank" rel="noopener noreferrer">
+                    <BsFacebook />
+                  </a>
                 </li>
               </ul>
             </div>
