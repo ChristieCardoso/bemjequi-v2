@@ -40,10 +40,10 @@ export const Footer = () => {
 
           <div className="footerInfo">
             <h1>Fale com a Bem Jequi</h1>
-            <p>Endereço: 123 Rua Principal, Cidade, Estado</p>
-            <p>Telefone: (31) 9 9536-3463</p>
-            <p>E-mail: contato@empresa.com</p>
-            <p>Seg à Sex: 8h às 18h | Sábado: 8h às 12h</p>
+            <p>Endereço: Almenara - MG </p>
+            <p>Telefone: (31) 9 9303-4536</p>
+            <p>E-mail: bemjequi@gmail.com</p>
+            <p>Seg à Sex: 17h às 20h | Sábado: 10h às 17h</p>
           </div>
 
         </div>
