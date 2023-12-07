@@ -1,7 +1,6 @@
-import { BsInstagram, BsFacebook, BsWhatsapp } from 'react-icons/bs';
 import bg from '../../assets/footer-banner.jpg';
-import bk from '../../assets/queijo.png';
-import Form from "./Form/Form";
+import Logo from '../../assets/queijo.png';
+import { BsInstagram, BsFacebook, BsWhatsapp } from 'react-icons/bs';
 
 import "./Footer.scss";
 
@@ -17,16 +16,9 @@ export const Footer = () => {
     >
       <div className="container">
         <div className="footerContainer">
-          <div className="footerInfo">
-            <h1>Fale com a Bem Jequi</h1>
-            <p>Endereço: 123 Rua Principal, Cidade, Estado</p>
-            <p>Telefone: (31) 9 9536-3463</p>
-            <p>E-mail: contato@empresa.com</p>
-            <p>Seg à Sex: 8h às 18h | Sábado: 8h às 12h</p>
-          </div>
 
           <div className="footerSocial">
-            <img src={bk} alt="" />
+            <img src={Logo} alt="Logo do Bem Jequi" />
             <div>
               <ul className="iconContainer">
                 <li className="icon whats">
@@ -44,17 +36,19 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-
           </div>
 
-          <div className="footerForm" >
-            <Form />
+          <div className="footerInfo">
+            <h1>Fale com a Bem Jequi</h1>
+            <p>Endereço: 123 Rua Principal, Cidade, Estado</p>
+            <p>Telefone: (31) 9 9536-3463</p>
+            <p>E-mail: contato@empresa.com</p>
+            <p>Seg à Sex: 8h às 18h | Sábado: 8h às 12h</p>
           </div>
 
         </div>
         <p className="license">©2020. Todos os direitos reservados para Laticínios Bem Jequi.</p>
       </div>
-
     </footer>
   )
 }
