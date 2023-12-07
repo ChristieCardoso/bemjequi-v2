@@ -33,7 +33,7 @@ export const Testimonial = () => {
             </p>
           </div>
         </div>
-        <a className="bn31" href="https://www.facebook.com/bemjequi/reviews" target="_blank" rel="noreferrer"><span className="bn31span">Deixe sua avaliação</span></a>
+        <a className="testimonialsBtn" href="https://www.facebook.com/bemjequi" target="_blank" rel="noreferrer"><span className="tBtnspan">Deixe sua avaliação</span></a>
       </div>
     </section>
   );

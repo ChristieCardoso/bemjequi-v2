@@ -1,8 +1,10 @@
 @import "../../index.scss";
 
 .footer {
-  .footerInfo {
-    padding: 15rem 5rem 10rem 5rem;
+  border: 1px solid red;
+  .footerContainer {
+    border: 1px solid red;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,27 +14,40 @@
 
     @include respond(phone) {
       justify-content: center;
-      padding: 3rem 1rem ;
+      padding: 3rem 1rem;
     }
 
-    .footerDetails {
+    .footerInfo {
+      & h1 {
+        font-size: 2rem;
+        color: var(--white);
+        margin-bottom: 1rem;
+      }
+      & p {
+        font-size: 1.6rem;
+        color: rgb(216, 216, 216);
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+      }
       @include respond(phone) {
         margin-bottom: 2rem;
         width: 50%;
       }
     }
+  }
+  .footerSocial {
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
 
-    & h1 {
-      font-size: 2rem;
-      color: var(--white);
-      margin-bottom: 1rem;
+    @include respond(phone) {
+      padding-bottom: 7rem;
     }
-    & p {
-      font-size: 1.6rem;
-      color: rgb(216, 216, 216);
-      margin-bottom: 0.5rem;
-      cursor: pointer;
-    }
+  }
+
+  .footerForm{
+    display: flex;
   }
   .license {
     font-size: 1.6rem;
@@ -40,7 +55,7 @@
     text-align: center;
     padding-bottom: 1rem;
 
-    @include respond(phone){
+    @include respond(phone) {
       padding-bottom: 7rem;
     }
   }
