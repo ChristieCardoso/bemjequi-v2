@@ -2,9 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <roteiro>
+      var _for = janela._for = janela._for || [];
+      /* métodos rastreadores como "setCustomDimension" devem ser chamados antes de "trackPageView" */
+      _paq.push(["setCookieDomain", "*.bemjequiv2.netlify.app"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (função() {
+        var você="https://bemjequiv2netlifyapp.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=documento, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='//cdn.matomo.cloud/bemjequiv2netlifyapp.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script async data-id="101436324" src="/6cce8d13f56565.js"></script>
     <meta name="description" content="business website" />
     <title>Bem Jequi</title>
   </head>
