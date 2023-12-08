@@ -25,7 +25,7 @@ export const Product = () => {
             Ingredientes
           </h3>
           <p>
-            Leite pasteurizado, cloreto de sódio, cloreto de cálcio, fermento lático e coagulante.          </p>
+            Leite , cloreto de sódio, cloreto de cálcio, fermento lático e coagulante.          </p>
         </div>
       </div>
 

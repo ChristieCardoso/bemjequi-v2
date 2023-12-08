@@ -6,7 +6,7 @@ import "./Footer.scss";
 
 export const Footer = () => {
   const handleWhatsAppClick = () =>
-    window.open("https://api.whatsapp.com/send?phone=31995363463", "_blank");
+    window.open("https://api.whatsapp.com/send?phone=31993034536", "_blank");
 
   return (
     <footer

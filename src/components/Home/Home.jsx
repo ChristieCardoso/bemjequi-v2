@@ -5,6 +5,8 @@ import { FiArrowRight } from "react-icons/fi";
 import "./Home.scss";
 
 export const Home = () => {
+  const handleWhatsAppClick = () =>
+    window.open("https://api.whatsapp.com/send?phone=31993034536", "_blank");
   return (
     <section id="home" className="home bgImg"
       style={{ backgroundImage: `url(${bg})` }}
@@ -16,7 +18,7 @@ export const Home = () => {
             <p>
               Saboreie um pedaço do interior em cada mordida do nosso queijo, uma jornada de autenticidade e tradição.
             </p>
-            <a href="#!" className="btn">
+            <a onClick={handleWhatsAppClick} className="btn">
               Peça Já
               <FiArrowRight />
             </a>
