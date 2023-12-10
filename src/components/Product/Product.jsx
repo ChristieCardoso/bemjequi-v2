@@ -1,18 +1,14 @@
-
 import "./Product.scss";
-import bg from "../../assets/backgroundQueijo.png";
-import dr from "../../assets/dr.png";
-
 
 export const Product = () => {
   return (
     <section
       id="Product"
       className="ProductContainer bgImg"
-      style={{ backgroundImage: `url(${bg})` }}
+      style={{ backgroundImage: `url(https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Landing-Page%20-%20BemJequi/tyyqihe0awkccu844auc)` }}
     >
       <div className="ProductCard">
-        <img className="ProductCardImg" src={dr} alt="Pessoa Cortando um Queijo"></img>
+        <img className="ProductCardImg" src='https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Landing-Page%20-%20BemJequi/cgzwc9ykqzxqj6u01wda' alt="Pessoa Cortando um Queijo"></img>
 
         <div className="ProductCardDetails">
           <h3>

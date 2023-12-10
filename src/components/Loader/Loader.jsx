@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-import loaderImg from '../../assets/Design sem nome.gif';
-
 import './Loader.scss';
 
 export const Loader = () => {
@@ -16,7 +14,7 @@ export const Loader = () => {
 
   return (
     <div className={isLoading ? 'loader' : 'loader fade-out'}>
-      <img src={loaderImg} alt="loader" />
+      <img src='https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Landing-Page%20-%20BemJequi/f8blhs3qq8uoxnbohexe' alt="loader" />
     </div>
   );
 };

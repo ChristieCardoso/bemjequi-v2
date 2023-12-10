@@ -1,5 +1,3 @@
-import bg from '../../assets/footer-banner.jpg';
-import Logo from '../../assets/queijo.png';
 import { BsInstagram, BsFacebook, BsWhatsapp } from 'react-icons/bs';
 
 import "./Footer.scss";
@@ -12,13 +10,13 @@ export const Footer = () => {
     <footer
       id="footer"
       className="footer bgImg"
-      style={{ backgroundImage: `url(${bg})` }}
+      style={{ backgroundImage: `url(https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Landing-Page%20-%20BemJequi/cdc2m8doqpfpdyywwkn7)` }}
     >
       <div className="container">
         <div className="footerContainer">
 
           <div className="footerSocial">
-            <img src={Logo} alt="Logo do Bem Jequi" />
+            <img src='https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Landing-Page%20-%20BemJequi/q9qpjemb4kmt26rgltl4' alt="Logo do Bem Jequi" />
             <div>
               <ul className="iconContainer">
                 <li className="icon whats">

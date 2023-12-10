@@ -1,5 +1,3 @@
-import homeImage from '../../assets/home-img.png';
-import bg from "../../assets/ds.png";
 import { FiArrowRight } from "react-icons/fi";
 
 import "./Home.scss";
@@ -9,7 +7,7 @@ export const Home = () => {
     window.open("https://api.whatsapp.com/send?phone=31993034536", "_blank");
   return (
     <section id="home" className="home bgImg"
-      style={{ backgroundImage: `url(${bg})` }}
+      style={{ backgroundImage: `url(https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Landing-Page%20-%20BemJequi/zgpoepi3cxaqwyrcw07b)` }}
     >
       <div className="container">
         <div className='row'>
@@ -25,7 +23,7 @@ export const Home = () => {
           </div>
 
           <div className="image">
-            <img src={homeImage} alt="home page" />
+            <img src='https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Landing-Page%20-%20BemJequi/z9ethdzd4sfbicud5dya' alt="Imagem do queijo" />
           </div>
         </div>
       </div>
