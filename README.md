@@ -5,7 +5,7 @@
 Projeto de uma landing page para um produto que vendo. Eu utilizo este projeto para promover meu produto e praticar o que tenho aprendido sobre desenvolvimento web.
 
 <br />
-<br />
+<br /> 
 
 ## How To Use
 

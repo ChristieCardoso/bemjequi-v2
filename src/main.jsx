@@ -40,7 +40,6 @@ const router = createBrowserRouter([
             <About />
             <Product />
             <Testimonial />
-
             <Footer />
           </>
         )

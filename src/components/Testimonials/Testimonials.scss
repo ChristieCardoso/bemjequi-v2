@@ -1,13 +1,12 @@
 @import "../../index.scss";
 
 /* testimonials */
+
 .testimonialsHeader {
-  
   text-align: center;
   font-size: 3.5rem;
   color: var(--primary-color);
   margin-top: 5rem;
-
 
   @include respond(phone) {
     font-size: 2.5rem;
@@ -23,6 +22,79 @@
   }
 }
 
+.slick-slider {
+  border: 1px solid black;
+  width: 100%;
+  margin: auto;
+}
+
+.slick-list {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-track {
+  border: 1px solid green;
+  display: flex;
+
+  justify-content: center;
+}
+
+.TestimonialsContainer {
+  border: 1px solid rgb(9, 255, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.cardtest {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 40%;
+  margin: auto;
+ 
+}
+
+.TestimonialsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Outras propriedades de estilização */
+}
+
+.cardtest {
+  background-color: #202020;
+  padding: 20px;
+  /* Outras propriedades de estilização */
+}
+
+.cardimg {
+  width: 100px;
+  height: 100px;
+  /* Outras propriedades de estilização */
+}
+
+.cardtext {
+  font-size: 16px;
+  /* Outras propriedades de estilização */
+}
+
+.cardname {
+  color: blue;
+  /* Outras propriedades de estilização */
+}
 .testimonialsAll {
   width: 100%;
   margin: 9rem 0;
@@ -30,7 +102,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-
 
   @include respond(phone) {
     flex-direction: column;
@@ -88,6 +159,7 @@
     }
   }
 }
+
 .testimonialsBtn {
   display: flex;
   align-items: center;

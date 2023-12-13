@@ -1,37 +1,57 @@
 import "./Testimonials.scss";
+import Slider from "react-slick";
+
+const testimonialData = [
+  {
+    id: 1,
+    name: "Samuel",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    img: "https://picsum.photos/101/101",
+  },
+  {
+    id: 1,
+    name: "John Doe",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    img: "https://picsum.photos/102/102",
+  },
+  {
+    id: 1,
+    name: "Smith",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    img: "https://picsum.photos/103/103",
+  },
+];
 
 export const Testimonial = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
     <section id="testimonials" className="testimonials">
-      <div className="container">
+      <div className="container" >
         <h1 className="testimonialsHeader">Avaliações</h1>
-        <div className="testimonialsAll">
-          <div className="testimonialsDetails">
-            <img className="bgImg" src='https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Landing-Page%20-%20BemJequi/f0hvmf3fkyd2ucxins4q' alt="Cliente Valdey" />
-            <h1>Valdey Santos</h1>
-            <p>
-              Gostei muito do queijo, produto de qualidade, virei cliente.
-            </p>
-          </div>
 
-          <div className="testimonialsDetails">
-            <img className="bgImg" src='https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Landing-Page%20-%20BemJequi/pgzywhoix9zumdftuism' alt="Cliente Lais" />
-            <h1>Lais Lima</h1>
-            <p>
-              Melhor queijo da região!!! Sabor incrível e preço muito acessível, recomendo muito a compra!!
-            </p>
-          </div>
+        <Slider {...settings}>
+          {testimonialData.map((data) => {
+            return (
+              <div key={data.id} className="TestimonialsContainer">
+                <div className="cardtest">
+                  <img className="cardimg" src={data.img} alt="" />
+                  <p className="cardtext">{data.text}</p>
+                  <h1 className="cardname">{data.name}</h1>
 
-          <div className="testimonialsDetails">
-            <img className="bgImg" src='https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Landing-Page%20-%20BemJequi/lqa9pkwnws5pzd3tipbl' alt="Cliente Carlos" />
-            <h1>Carlos Silva</h1>
-            <p>
-              Eu experimentei o queijo cozido dessa página e simplesmente amei! Ele é muito saboroso e tem uma textura incrível.
-            </p>
-          </div>
-        </div>
+                </div>
+              </div>
+            );
+          })}
+        </Slider>
         <a className="testimonialsBtn" href="https://www.facebook.com/bemjequi" target="_blank" rel="noreferrer"><span className="tBtnspan">Deixe sua avaliação</span></a>
       </div>
+
     </section>
   );
 };
