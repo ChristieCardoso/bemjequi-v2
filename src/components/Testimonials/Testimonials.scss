@@ -1,12 +1,15 @@
 @import "../../index.scss";
 
 /* testimonials */
+.testimonials {
+  height: 90vh;
+}
 
 .testimonialsHeader {
   text-align: center;
   font-size: 3.5rem;
   color: var(--primary-color);
-  margin-top: 5rem;
+  margin-top: 3rem;
 
   @include respond(phone) {
     font-size: 2.5rem;
@@ -23,140 +26,95 @@
 }
 
 .slick-slider {
-  border: 1px solid black;
-  width: 100%;
-  margin: auto;
-}
-
-.slick-list {
-  border: 1px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 7rem;
+  margin-top: 7rem;
 }
 
 .slick-track {
-  border: 1px solid green;
   display: flex;
-
-  justify-content: center;
-}
-
-.TestimonialsContainer {
-  border: 1px solid rgb(9, 255, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-}
-
-.cardtest {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 1rem;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  justify-content: center;
   padding: 1rem;
-  border-radius: 0.5rem;
-  width: 40%;
+  margin-bottom: 1.2rem;
+}
+
+.slick-dots {
+  list-style: none;
   margin: auto;
- 
+  width: 20%;
 }
 
-.TestimonialsContainer {
+.slick-dots li {
+  margin: 0 25px; /* Ajuste a margem conforme desejado */
+  display: inline-block;
+}
+
+.slick-dots button {
+  font-size: 0;
+  background-color: #000;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.slick-dots .slick-active button {
+  background-color: var(--primary-color);
+  border: none;
+}
+.starRating {
+  color: #ffd700; /* Define a cor amarela para as estrelas */
+}
+
+.star {
+  font-size: 20px; /* Define o tamanho das estrelas */
+}
+
+.cardTestimonials {
+  background-color: var(--white);
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-
-  /* Outras propriedades de estilização */
-}
-
-.cardtest {
-  background-color: #202020;
-  padding: 20px;
-  /* Outras propriedades de estilização */
-}
-
-.cardimg {
-  width: 100px;
-  height: 100px;
-  /* Outras propriedades de estilização */
-}
-
-.cardtext {
-  font-size: 16px;
-  /* Outras propriedades de estilização */
-}
-
-.cardname {
-  color: blue;
-  /* Outras propriedades de estilização */
-}
-.testimonialsAll {
-  width: 100%;
-  margin: 9rem 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  height: 30rem;
+  position: relative;
+  border-radius: 5rem;
+  box-shadow: 0rem 0.44rem 1.81rem 0rem rgba(100, 100, 111, 0.2);
+  transition: 0.3s;
+  border-bottom: 3px solid var(--primary-color);
+  border-top: 3px solid var(--primary-color);
 
   @include respond(phone) {
-    flex-direction: column;
-    justify-content: center;
+    width: 60%;
+    margin-bottom: 5rem;
   }
 
-  .testimonialsDetails {
-    background-color: var(--white);
-    width: 25%;
-    height: 30rem;
-    position: relative;
-    border-radius: 5rem;
-    box-shadow: 0rem 0.44rem 1.81rem 0rem rgba(100, 100, 111, 0.2);
-    transition: 0.3s;
-    border-bottom: 3px solid var(--primary-color);
-    border-top: 3px solid var(--primary-color);
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0rem 0.125rem 0.25rem 0rem rgba(14, 30, 37, 0.12),
+      0rem 0.125rem 1rem 0rem rgba(14, 30, 37, 0.32);
+  }
+  .cardImg {
+    width: 8rem;
+    height: 8rem;
+    border: 0.3rem solid rgb(224, 222, 222);
+    border-radius: 50%;
+  }
 
-    @include respond(phone) {
-      width: 60%;
-      margin-bottom: 5rem;
-    }
+  .cardName {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--grey);
+  }
 
-    &:hover {
-      transform: scale(1.1);
-      box-shadow: 0rem 0.125rem 0.25rem 0rem rgba(14, 30, 37, 0.12),
-        0rem 0.125rem 1rem 0rem rgba(14, 30, 37, 0.32);
-
-      @media only screen and (max-width: 600px), only screen and (hover: none) {
-        transform: none;
-      }
-    }
-
-    & img {
-      position: absolute;
-      top: -5rem;
-      left: calc(50% - 5rem);
-      width: 10rem;
-      height: 10rem;
-      border: 0.5rem solid rgb(224, 222, 222);
-      border-radius: 50%;
-    }
-
-    & h1 {
-      text-align: center;
-      margin-top: 30%;
-      font-size: 2rem;
-      color: var(--grey);
-    }
-
-    & p {
-      text-align: center;
-      padding: 2rem;
-      font-size: 1.5rem;
-      color: black;
-    }
+  .cardText {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: black;
   }
 }
 
