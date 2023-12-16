@@ -1,5 +1,7 @@
 import "./Testimonials.scss";
 import Slider from "react-slick";
+import { FaSquareFacebook } from "react-icons/fa6";
+
 
 const testimonialData = [
   {
@@ -22,8 +24,8 @@ const testimonialData = [
   },
   {
     id: 4,
-    name: "Smith",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    name: "Michelly Dias",
+    text: "Gostei bastante, derrete muito.",
     img: "https://picsum.photos/103/103",
   },
 ];
@@ -31,8 +33,16 @@ const testimonialData = [
 export const Testimonial = () => {
   var settings = {
     dots: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     arrows: false,
+    infinite: true,
+    speed: 800,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    pauseOnHover: true,
+    pauseOnFocus: true,
   };
 
   return (
@@ -60,7 +70,7 @@ export const Testimonial = () => {
             );
           })}
         </Slider>
-        <a className="testimonialsBtn" href="https://www.facebook.com/bemjequi" target="_blank" rel="noreferrer"><span className="tBtnspan">Deixe sua avaliação</span></a>
+        <a className="testimonialsBtn" href="https://www.facebook.com/bemjequi/reviews" target="_blank" rel="noreferrer"><FaSquareFacebook className="iconTestimonials" />Deixe sua avaliação</a>
       </div>
 
     </section >

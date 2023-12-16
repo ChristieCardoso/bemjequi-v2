@@ -2,7 +2,7 @@
 
 /* testimonials */
 .testimonials {
-  height: 90vh;
+  margin-bottom: 3rem;
 }
 
 .testimonialsHeader {
@@ -45,7 +45,7 @@
 }
 
 .slick-dots li {
-  margin: 0 25px; /* Ajuste a margem conforme desejado */
+  margin: 0 25px;
   display: inline-block;
 }
 
@@ -64,11 +64,11 @@
   border: none;
 }
 .starRating {
-  color: #ffd700; /* Define a cor amarela para as estrelas */
+  color: #ffd700;
 }
 
 .star {
-  font-size: 20px; /* Define o tamanho das estrelas */
+  font-size: 20px;
 }
 
 .cardTestimonials {
@@ -120,49 +120,46 @@
 
 .testimonialsBtn {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 1rem 3rem;
-  border-radius: 5em;
-  width: 30%;
-  margin: auto;
-  gap: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  border: none;
-  position: relative;
+  width: 13%;
+  padding: 0.9em 2.3em;
   cursor: pointer;
-  overflow: hidden;
-  z-index: 1;
-  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
-  box-shadow: 6px 6px 12px #4f4f4f, -6px -6px 12px #ffffff;
-}
-
-.testimonialsBtn::before {
-  content: "";
-  width: 0;
-  height: 3em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to right, #f9f047 0%, #0fd850 100%);
-  transition: 0.6s ease;
-  display: block;
-  z-index: -1;
-}
-
-.testimonialsBtn:hover::before {
-  width: 100%;
+  margin: auto;
+  gap: 0.5rem;
+  border-radius: 15rem;
+  font-weight: 700;
+  font-size: 1em;
+  border-bottom: 2px solid var(--color-blue);
+  border-top: 2px solid var(--color-blue);
+  font-size: 0.9rem;
+  color: #000000;
+  background-image: linear-gradient(45deg, transparent 50%, #004fd6 50%);
+  background-position: 25%;
+  background-size: 400%;
+  -webkit-transition: background 500ms ease-in-out, color 500ms ease-in-out;
+  transition: background 500ms ease-in-out, color 500ms ease-in-out;
 }
 
 .testimonialsBtn:hover {
-  color: #fff;
+  color: #ffffff;
+  background-position: 100%;
+  .iconTestimonials {
+    color: #ffffff;
+  }
+}
+.iconTestimonials {
+  color: #004fd6;
 }
 
 @media (max-width: 900px) {
   .testimonialsBtn {
     margin-top: 2rem;
-    width: 70%;
-    font-size: 2.4rem;
+    width: 40%;
+    font-size: 1.4rem;
+  }
+
+  .slick-dots li {
+    margin: 0 5px;
+    display: inline-block;
   }
 }
