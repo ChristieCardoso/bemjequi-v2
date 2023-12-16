@@ -1,7 +1,7 @@
-import "./Testimonials.scss";
 import Slider from "react-slick";
 import { FaSquareFacebook } from "react-icons/fa6";
 
+import "./Testimonials.scss";
 
 const testimonialData = [
   {
@@ -39,7 +39,7 @@ export const Testimonial = () => {
     speed: 800,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
