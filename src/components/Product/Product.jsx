@@ -20,8 +20,7 @@ export const Product = () => {
           <h3>
             Ingredientes
           </h3>
-          <p>
-            Leite , cloreto de sódio, cloreto de cálcio, fermento lático e coagulante.          </p>
+          <p>Leite fresco , Cloreto de sódio (sal), cloreto de cálcio, e coagulante. O ponto da massa é o segredo da qualidade.</p>
         </div>
       </div>
 
